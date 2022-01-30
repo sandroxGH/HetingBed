@@ -1,0 +1,138 @@
+.HEA
+.TIM Sun 30 Jan 2022 08:13:48 CET
+.APP "Eeschema 5.1.9+dfsg1-1"
+
+.ADD_COM SH1 "ARDUINO_NANO_R3"
+.ADD_COM U1 "I2c_LCD"
+.ADD_COM Up1 "SW_Push"
+.ADD_COM Dw1 "SW_Push"
+.ADD_COM D1 "LED_R"
+.ADD_COM D2 "LED_G"
+.ADD_COM R1 "470R"
+.ADD_COM R2 "470R"
+.ADD_COM TH1 "NTC-100K"
+.ADD_COM J1 "Conn_01x08_Female"
+.ADD_COM J2 "Conn_01x08_Male"
+.ADD_COM R3 "10k"
+.ADD_COM J3 "Conn_01x02_Female"
+.ADD_COM J4 "Conn_01x02_Male"
+.ADD_COM U2 "MOC3032M"
+.ADD_COM R5 "360R"
+.ADD_COM K1 "EC2-3NU"
+.ADD_COM J5 "Conn_01x02"
+.ADD_COM J6 "Conn_01x02"
+.ADD_COM R4 "470R"
+.ADD_COM R6 "330R"
+.ADD_COM Q1 "BC182"
+.ADD_COM R7 "660R"
+.ADD_COM D4 "LED_R"
+.ADD_COM F1 "4A"
+.ADD_COM D3 "Z0405MF"
+.ADD_COM T1 "Trasf 220V-9,5V"
+.ADD_COM D5 "D_Bridge_+-AA"
+.ADD_COM C1 "100C"
+.ADD_COM C2 "10C"
+.ADD_COM D6 "1N4007"
+.ADD_COM U3 "78L05"
+
+
+.ADD_TER Q1.2 "Net-(D4-Pad1)"
+.TER     K1.12
+         D4.1
+.ADD_TER R7.2 "Net-(D4-Pad2)"
+.TER     D4.2
+.ADD_TER J4.2 "GND"
+.TER     U2.2
+         U3.6
+         U3.7
+         J1.1
+         SH1.GND2
+         SH1.GND1
+         D5.2
+         Q1.3
+         C1.2
+         C2.2
+         U3.2
+         U3.3
+.ADD_TER R6.1 "Net-(Q1-Pad1)"
+.TER     Q1.1
+.ADD_TER SH1.5 "Rele"
+.TER     R6.2
+.ADD_TER C1.1 "+12V"
+.TER     U3.8
+         D6.1
+         D5.1
+         R7.1
+         K1.1
+.ADD_TER J5.1 "Net-(F1-Pad1)"
+.TER     F1.1
+.ADD_TER TH1.1 "Net-(J3-Pad1)"
+.TER     J3.1
+.ADD_TER TH1.2 "Net-(J3-Pad2)"
+.TER     J3.2
+.ADD_TER R4.1 "Net-(R4-Pad1)"
+.TER     U2.1
+.ADD_TER U2.6 "Net-(R5-Pad1)"
+.TER     R5.1
+.ADD_TER U2.4 "Net-(D3-Pad3)"
+.TER     D3.3
+.ADD_TER J6.2 "Net-(J6-Pad2)"
+.TER     K1.4
+.ADD_TER D3.2 "Net-(D3-Pad2)"
+.TER     R5.2
+         K1.9
+.ADD_TER J6.1 "Net-(D3-Pad1)"
+.TER     D3.1
+.ADD_TER C2.1 "+5V"
+.TER     D6.2
+         U3.1
+         J1.2
+.ADD_TER T1.4 "Net-(D5-Pad3)"
+.TER     D5.3
+.ADD_TER D5.4 "Net-(D5-Pad4)"
+.TER     T1.3
+.ADD_TER D1.2 "Net-(D1-Pad2)"
+.TER     R1.1
+.ADD_TER R2.1 "Net-(D2-Pad2)"
+.TER     D2.2
+.ADD_TER J2.5 "Net-(J2-Pad5)"
+.TER     Up1.1
+.ADD_TER U1.3 "Net-(J2-Pad2)"
+.TER     J2.2
+.ADD_TER J1.5 "Up"
+.TER     SH1.2
+.ADD_TER SH1.3 "Dw"
+.TER     J1.6
+.ADD_TER J1.7 "Led_R"
+.TER     SH1.6
+         R4.2
+.ADD_TER U1.4 "Net-(D1-Pad1)"
+.TER     Up1.2
+         Dw1.2
+         D1.1
+         J2.1
+         D2.1
+.ADD_TER J2.3 "Net-(J2-Pad3)"
+.TER     U1.2
+.ADD_TER J2.4 "Net-(J2-Pad4)"
+.TER     U1.1
+.ADD_TER Dw1.1 "Net-(Dw1-Pad1)"
+.TER     J2.6
+.ADD_TER R1.2 "Net-(J2-Pad7)"
+.TER     J2.7
+.ADD_TER R2.2 "Net-(J2-Pad8)"
+.TER     J2.8
+.ADD_TER J1.8 "Led_G"
+.TER     SH1.7
+.ADD_TER SH1.A0 "Net-(J4-Pad1)"
+.TER     R3.2
+         J4.1
+.ADD_TER SH1.3V3 "+3V3"
+.TER     SH1.AREF
+         R3.1
+.ADD_TER J1.3 "SDA"
+.TER     SH1.A4
+.ADD_TER J1.4 "SCL"
+.TER     SH1.A5
+
+.END
